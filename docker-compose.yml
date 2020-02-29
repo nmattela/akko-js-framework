@@ -1,0 +1,7 @@
+version: '3'
+services:
+  akko-framework:
+    build: .
+    restart: always
+    ports:
+      - "1235:80"
