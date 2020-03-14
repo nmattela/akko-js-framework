@@ -1,8 +1,7 @@
 {
   "plugins": [
     ["babel-plugin-transform-jsx", {
-      "useVariables": true,
-      "module": "@nmattela/akko"
+      "useVariables": true
     }],
     "@babel/plugin-proposal-class-properties"
   ]

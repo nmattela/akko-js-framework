@@ -1,7 +1,6 @@
-import { AsyncComponent } from "@nmattela/akko";
-import SubAsync from "../SubAsync/SubAsync";
+import { SyncComponent } from '@nmattela/akko';
 
-class AsyncTest extends AsyncComponent {
+class SyncTest extends SyncComponent {
 
     calculatePrimes(iterations, multiplier) {
         let primes = [];
@@ -23,16 +22,9 @@ class AsyncTest extends AsyncComponent {
     }
 
     render() {
-        this.calculatePrimes(200, 1000000000);
-        return (
-            <div>
-                <h2>{this.props.counter}</h2>
-                <div>
-                    <SubAsync counter={this.props.counter} />
-                </div>
-            </div>
-        )
+        this.calculatePrimes(100, 1000000000)
+        return <h2>{this.props.counter}</h2>
     }
 }
 
-export default AsyncTest
+export default SyncTest;
