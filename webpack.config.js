@@ -3,11 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const resolve = require('path').resolve;
 
 module.exports = {
-    entry: {
-        bundle: './src/index.js',
-        'AsyncComponentDelegator.worker': './node_modules/akko-js/AsyncComponentDelegator.worker.js',
-        'CompositeComponentDelegator.worker': './node_modules/akko-js/CompositeComponentDelegator.worker.js'
-    },
+    entry: './src/index.js',
     module: {
         rules: [
             {
@@ -40,8 +36,5 @@ module.exports = {
         new CopyWebpackPlugin([
             {from: './public', to: '.'}
         ])
-    ],
-    output: {
-        filename: '[name].js'
-    }
+    ]
 };
