@@ -16,6 +16,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-syntax-jsx": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "akko-js": "^1.0.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-include": "^1.2.0",
     "babel-plugin-transform-jsx": "^2.0.0",
